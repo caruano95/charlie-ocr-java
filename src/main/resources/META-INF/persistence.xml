@@ -6,8 +6,8 @@
         <description>
             This unit manages journal entries and notification schedules
         </description>
-        <class>com.diarist.journal.models.User</class>
-        <class>com.diarist.journal.models.JournalEntry</class>
+        <class>com.charlie.ocr.models.User</class>
+        <class>com.charlie.ocr.models.JournalEntry</class>
         <properties>
             <property name="eclipselink.target-database" value="MySQL"/>
             <property name="javax.persistence.jdbc.url" value="change_value"/>

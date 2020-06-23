@@ -1,6 +1,6 @@
-package com.diarist.journal;
+package com.charlie.ocr;
 
-import com.diarist.journal.util.AppSetup;
+import com.charlie.ocr.util.AppSetup;
 import org.flywaydb.core.Flyway;
 
 /**

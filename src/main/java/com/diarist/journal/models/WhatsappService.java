@@ -1,6 +1,6 @@
-package com.diarist.journal.models;
+package com.charlie.ocr.models;
 
-import com.diarist.journal.util.PhoneUtils;
+import com.charlie.ocr.util.PhoneUtils;
 import com.twilio.rest.api.v2010.account.Message;
 
 import java.net.URLDecoder;

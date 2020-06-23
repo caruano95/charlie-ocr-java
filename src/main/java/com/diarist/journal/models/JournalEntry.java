@@ -1,4 +1,4 @@
-package com.diarist.journal.models;
+package com.charlie.ocr.models;
 
 import com.google.gson.annotations.Expose;
 

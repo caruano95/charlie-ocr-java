@@ -1,11 +1,11 @@
-package com.diarist.journal.controllers;
+package com.charlie.ocr.controllers;
 
 
-import com.diarist.journal.models.JournalEntry;
-import com.diarist.journal.models.JournalService;
-import com.diarist.journal.models.User;
-import com.diarist.journal.models.UserService;
-import com.diarist.journal.util.PhoneUtils;
+import com.charlie.ocr.models.JournalEntry;
+import com.charlie.ocr.models.JournalService;
+import com.charlie.ocr.models.User;
+import com.charlie.ocr.models.UserService;
+import com.charlie.ocr.util.PhoneUtils;
 import com.google.gson.*;
 import spark.Route;
 

@@ -1,6 +1,6 @@
-package com.diarist.journal.controllers;
+package com.charlie.ocr.controllers;
 
-import com.diarist.journal.models.*;
+import com.charlie.ocr.models.*;
 import spark.Route;
 
 import java.net.URLDecoder;

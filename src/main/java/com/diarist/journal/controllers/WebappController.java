@@ -1,7 +1,7 @@
-package com.diarist.journal.controllers;
+package com.charlie.ocr.controllers;
 
-import com.diarist.journal.models.*;
-import com.diarist.journal.util.PhoneUtils;
+import com.charlie.ocr.models.*;
+import com.charlie.ocr.util.PhoneUtils;
 import spark.ModelAndView;
 import spark.Route;
 import spark.template.mustache.MustacheTemplateEngine;

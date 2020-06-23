@@ -1,12 +1,12 @@
-package com.diarist.journal;
+package com.charlie.ocr;
 
-import com.diarist.journal.controllers.JournalController;
-import com.diarist.journal.controllers.WebappController;
-import com.diarist.journal.controllers.WhatsappController;
-import com.diarist.journal.models.JournalService;
-import com.diarist.journal.models.UserService;
-import com.diarist.journal.models.WhatsappService;
-import com.diarist.journal.util.AppSetup;
+import com.charlie.ocr.controllers.JournalController;
+import com.charlie.ocr.controllers.WebappController;
+import com.charlie.ocr.controllers.WhatsappController;
+import com.charlie.ocr.models.JournalService;
+import com.charlie.ocr.models.UserService;
+import com.charlie.ocr.models.WhatsappService;
+import com.charlie.ocr.util.AppSetup;
 import com.twilio.Twilio;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

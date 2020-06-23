@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.diarist.journal</groupId>
-    <artifactId>diarist-app</artifactId>
+    <groupId>com.charlie.ocr</groupId>
+    <artifactId>charlie-ocr</artifactId>
     <version>1.0</version>
-    <name>Diarist app</name>
+    <name>OCR</name>
     <description>
-        An service to handle Journal entries
+        OCR
     </description>
 
     <properties>
@@ -55,7 +55,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.diarist.journal.Server</mainClass>
+                                    <mainClass>com.charlie.ocr.Server</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

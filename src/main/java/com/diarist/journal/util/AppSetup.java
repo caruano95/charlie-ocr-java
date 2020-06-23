@@ -1,4 +1,4 @@
-package com.diarist.journal.util;
+package com.charlie.ocr.util;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
