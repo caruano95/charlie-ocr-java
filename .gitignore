@@ -1,1 +1,13 @@
-data/*
+# IntelliJ
+.idea/*
+*.iml
+.settings
+.project
+.classpath
+out/
+target/
+dependency-reduced-pom.xml
+.env
+
+# System
+.DS_Store
