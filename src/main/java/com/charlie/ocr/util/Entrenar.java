@@ -1,3 +1,8 @@
+package com.charlie.ocr.util;
+
+import com.charlie.ocr.util.NeuralNet;
+
+import com.charlie.ocr.util.Image;
 import java.io.IOException;
 
 public class Entrenar{

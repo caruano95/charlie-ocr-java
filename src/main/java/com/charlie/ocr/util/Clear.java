@@ -1,10 +1,9 @@
+package com.charlie.ocr.util;
+
 import java.awt.event.*;
 import javax.swing.*;
-import java.awt.Color;
 import java.awt.Graphics;
 
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class Clear extends JPanel implements MouseListener{   
 

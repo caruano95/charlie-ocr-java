@@ -1,3 +1,5 @@
+package com.charlie.ocr.util;
+
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.Color;

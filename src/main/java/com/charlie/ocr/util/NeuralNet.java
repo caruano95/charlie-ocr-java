@@ -1,3 +1,5 @@
+package com.charlie.ocr.util;
+
 import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.io.File;
@@ -44,13 +46,13 @@ public class NeuralNet{
             inputLayer[inputsLayerSize-1] = 1.0;//Siempre es uno para que el peso sea el bias
 
             //Leer del archivo para llenar los pesos 
-            BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(new File("capamedia.txt")), "UTF8")); 
+            BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(new File("first.txt")), "UTF8"));
             for(int i=0; i < hiddenLayerSize; i++)
                 for(int j = 0; j < inputsLayerSize; j++)
                     pesos[(i*inputsLayerSize)+j] =  Double.parseDouble(in.readLine());
 
             //Cambiamos de archivo
-            in = new BufferedReader(new InputStreamReader(new FileInputStream(new File("capafinal.txt")), "UTF8"));      
+            in = new BufferedReader(new InputStreamReader(new FileInputStream(new File("second.txt")), "UTF8"));
             //Llenando los otros pesos
             for(int i=0; i< outputLayerSize; i++)
                 for(int j = 0; j < hiddenLayerSize; j++)
@@ -129,14 +131,14 @@ public class NeuralNet{
     public void initNet(){
             Random r = new Random();
             try {
-                PrintWriter writer = new PrintWriter("capamedia.txt", "UTF-8");
+                PrintWriter writer = new PrintWriter("first.txt", "UTF-8");
                 for(int i=0; i< hiddenLayerSize; i++)
                     for(int j = 0; j < inputsLayerSize; j++)
                         writer.println(r.nextGaussian());     
 
                 writer.close();  
                 
-                PrintWriter writer2 = new PrintWriter("capafinal.txt", "UTF-8");
+                PrintWriter writer2 = new PrintWriter("second.txt", "UTF-8");
                 for(int i=0; i< outputLayerSize; i++)
                     for(int j = 0; j < hiddenLayerSize; j++)
                         writer2.println(r.nextGaussian());
@@ -150,13 +152,13 @@ public class NeuralNet{
     //Para guardar los pesos en el archivo despues de entrenar
     public void printNet(){
             try {
-                PrintWriter writer = new PrintWriter("capamedia.txt", "UTF-8");
+                PrintWriter writer = new PrintWriter("first.txt", "UTF-8");
                 for(int i=0; i< hiddenLayerSize;i++)
                     for(int j = 0; j < inputsLayerSize ; j++)
                         writer.println(pesos[(i*inputsLayerSize)+j]);
                 writer.close();
 
-                PrintWriter writer2 = new PrintWriter("capafinal.txt", "UTF-8");
+                PrintWriter writer2 = new PrintWriter("second.txt", "UTF-8");
                 for(int i=0; i< outputLayerSize;i++)
                     for(int j = 0; j < hiddenLayerSize ; j++)
                         writer2.println(pesosfinal[(i*hiddenLayerSize)+j]);

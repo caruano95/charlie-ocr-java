@@ -1,3 +1,4 @@
+package com.charlie.ocr.util;
 
 import java.io.*;
 import java.util.*;
